@@ -1,0 +1,158 @@
+<html>
+<head>
+	<title>
+		silverhigh.com
+	</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="veiwpoint" content="width=devive-width, initial-scale=1.0">
+	
+</head>
+
+<header onload="slideA()">
+<h1 class="caption">Nobody does it better</h1>
+<div class="container">
+<img  class="logo" src="logo.jpg">
+<img  id="banner" src="Image/img1.jpg">
+<div id="left-holder"><img onclick="slide(-1)" class="left" src="Image/slide-left.png">
+</div>
+<div id="right-holder"><img onclick="slide(1)" class="right" src="Image/slide-right.png"></div>
+
+</div>
+<script type="text/javascript">
+var imagecount=1
+var total=5
+
+function slide(x){
+	var Image = document.getElementById('banner');
+	imagecount = imagecount + x;
+	
+	if (imagecount > total) {
+		imagecount = 1;
+
+	}
+	if (imagecount < 1) {
+		imagecount = total;
+	}
+	Image.src= "Image/img"+imagecount+".jpg";
+}
+window.setInterval(function slideA(){
+	var Image = document.getElementById('banner');
+	imagecount = imagecount + 1;
+	
+	if (imagecount > total) {
+		imagecount = 1;
+
+	}
+	if (imagecount < 1) {
+		imagecount = total;
+	}
+	Image.src= "Image/img"+imagecount+".jpg";
+},5000);
+/*
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+*/
+
+
+</script>
+</div>
+
+</header>
+<body>
+
+	<nav>
+		<ul>
+			<li class="list"><a href="silverhigh.html">Home</a></li>
+			<li class="list"><a href="#" onclick="loadDoc()">About</a></li>
+			<li class="list"><a href="contact.html">Contact</a></li>
+		</ul>
+		
+	</nav>
+	<main>
+	
+		<section class="section1">
+		<div class="search">		
+		<h3 style="color:silver; padding:10px; font-size:25px;">Search Property</h3>
+			<button class="searchbutton">For Rent</button>
+			<button class="searchbutton">For Sale</button>
+			<button class="searchbutton">For Short Stay</button><br>
+			<form>
+			<div class="searchform">
+			<input class="inputsearch" type="text" name="location" placeholder="Enter Location" style="width: 820px;" ></div>
+			<div  class="searchform">
+			<input class="inputsearch" type="text" name="location" placeholder="property type" style="width: 200px;"></div>
+			<div class="searchform"><input class="inputsearch" type="text" name="location" placeholder="price min" style="width: 150px;"></div>
+			<div class="searchform"><input class="inputsearch" type="text" name="location" placeholder="price max" style="width: 150px;"></div>
+			<div class="searchform"><input class="inputsearch" type="text" name="location" placeholder="bed rooms" style="width: 150px;"></div>
+			<div class="searchform"><input class="inputsearch" type="text" name="location" placeholder="toilets" style="width: 115px;">
+			</div>
+			</form>
+		</div>
+		</section>
+		<section class="section2">
+		<div class="featured">
+		<h2 style="font-size:30px;">Featured Properties</h2>
+		</div>
+	
+		<script src="silverscript.js"></script>
+		<div id="contain">		
+		<a class="thumb"><img id="property" src="Image/dubai1.jpg"><span> <img id="hover1" onclick="propertyA()" ="callslide()" src="Image/dubai1.jpg"><p id="text">Bromillia</p></span></a>
+		<p id="text">Bromillia</p>
+		<a class="thumb"><img id="property" src="Image/dubai2.jpg" ><span> <img id="hover2" onclick="propertyB()"  src="Image/dubai2.jpg"></span></a>
+		<p id="text">Bromillia</p>
+		<a class="thumb"><img id="property" src="Image/dubai3.jpg" ><span> <img id="hover3" onclick="propertyC()" src="Image/dubai3.jpg"></span></a>
+		<p id="text">Bromillia</p>
+		<a class="thumb"><img id="property" src="Image/dubai4.jpg" ><span> <img id="hover4" onclick="propertyD()" src="Image/dubai4.jpg"></span></a>
+		<p id="text">Bromillia</p>
+  		<a class="thumb"><img id="property" src="Image/dubai5.jpg" ><span> <img id="hover5" onclick="propertyE()" src="Image/dubai5.jpg"></span></a>
+		<p id="text">Bromillia</p>
+		<a class="thumb"><img id="property" src="Image/dubai6.jpg" ><span> <img id="hover6" onclick="propertyF()" src="Image/dubai6.jpg"></span></a>
+		<p id="text">Bromillia</p>
+		</div>
+		<button type="submit" class="showmore" href="#">see more...</button>
+<div>
+
+</div>
+		<article>
+			<h3 style="font-size:30px; padding:10px 0;">About Us</h3>
+			<img style="width:200px; height:200px; padding:20px;" " src="logo.jpg">
+			<p class="about">Established in 2007, Binayah Real Estate was formed by industry professionals with combined experience of over 30 years in the Real Estate Market. We offer our clients a distinguished array of services, ranging from Property Management, Asset Management, Real estate Brokerage Services, Assistance in Buying, Selling or Renting and Investment and Development Consultancy. Our asset management division overlooks a wide range of properties across residential, commercial, leasehold and freehold areas. We have diversified into related business lines to further build value for our prestigious customers by venturing out into the development of apartment buildings and other development projects.</p>
+		</article>
+
+		</section>
+	</main>
+	<aside>
+	<ul class="bullet">
+			<h4><a href="silverhigh.html">Properties in Dubai</h4>
+			<li class="sidenav"><a href="silverhigh.html">52-42</a></li>
+			<li class="sidenav"><a href="silverhigh.html">Address Boulevard</a></li>
+			<li class="sidenav"><a href="silverhigh.html">Akoya</a></li>
+			<li class="sidenav"><a href="silverhigh.html">Akoya Oxygen</a></li>
+			<li class="sidenav"><a href="silverhigh.html">Al Barari</a></li>
+			<li class="sidenav"><a href="silverhigh.html">Al Barsha</a></li>
+			<li class="sidenav"><a href="silverhigh.html">Al Furjan</a></li>
+		</ul>
+	</aside>
+
+	<footer>
+	<p>©2014, All Rights Reserved</p>
+	<p>Powered By Heych</p>
+	</footer>
+	
+</body>
+</html>
