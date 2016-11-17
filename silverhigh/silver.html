@@ -1,0 +1,67 @@
+<html>
+<head>
+	<title>
+		silverhigh.com
+	</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<header>
+<div class="container">
+	<img class="logo" src="logo.jpg" >
+</div>
+<div class="container">
+<img class= "banner" src="banner.jpg">
+</div>
+</header>
+<body>
+
+	<nav>
+		<ul>
+			<li class="list"><a href="silverhigh.html">Home</a></li>
+			<li class="list"><a href="#" onclick="loadDoc()">About</a></li>
+			<li class="list"><a href="contact.html">Contact</a></li>
+		</ul>
+		
+	</nav>
+	<main>
+		<section>
+			<article>
+				<h3>Who We Are</h3>
+
+				<script>
+function loadDoc() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (xhttp.readyState == 4 && xhttp.status == 200) {
+      document.getElementById("demo").innerHTML = xhttp.responseText;
+    }
+  };
+  xhttp.open("GET", "ajax.txt", true);
+  xhttp.send();
+} 
+</script>
+				<p id="demo"></p>
+			</article>
+		</section>
+	</main>
+	<aside>
+		<ul class="bullet">
+			<h4><a>Properties in Dubai Area</h4>
+			<li><a>5<a>2-42</a></li>
+			<li><a>Address Boulevard</a></li>
+			<li><a>Akoya</a></li>
+			<li><a>Akoya Oxygen</a></li>
+			<li><a>Al Barari</a></li>
+			<li><a>Al Barsha</a></li>
+			<li><a>Al Furjan</a></li>
+		</ul>
+	</aside>
+
+	<footer>
+	<p>©2014, All Rights Reserved</p>
+	<p>Powered By Heych</p>
+	</footer>
+	
+</body>
+</html>

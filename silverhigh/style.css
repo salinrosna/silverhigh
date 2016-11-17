@@ -1,0 +1,330 @@
+@charset "UTF-8";
+
+article,aside, header, main, nav, section
+{
+	display:block;
+}
+
+html, body, h1, h2, h3, ul, li, a, p,
+article,aside, header, main, nav, section
+{
+	padding:0;
+	margin:0;
+}
+
+.caption
+{
+color:silver;
+font-family: cursive;
+text-align: center;
+padding: 10px;
+	}
+
+	.container{
+	position:relative;
+	top: 0; left: 0;
+	
+}
+
+	
+#search{
+	width: 40px;
+	height:20px;
+	position: absolute;
+	top:20px;
+	right: 20%;
+	z-index: 2;
+}
+input{
+	width: 200px;
+	height: 40px;
+	box-sizing: border-box;
+	border-color: grey;
+	
+
+}
+#banner{
+	width: 100%;
+	padding: 0px;
+	position: relative; top: 0; left: 0;
+	z-index: 1;
+	opacity: .8;
+}
+.logo{
+	
+	width:18%;
+	height:50%;
+	position: absolute; top: 40px; left: 50px;
+	z-index: 2;
+}
+
+
+#left-holder{
+	width: 10%;
+	height: 100%;	
+	position: absolute;
+	left: 0px;
+	top:0px;
+}
+#right-holder{
+	width: 10%;
+	height: 100%;
+	position: absolute;
+	right: 0px;
+	top:0px;
+}
+.left
+{
+	width:30px;
+	height: 60px;
+	position:absolute;
+	top: 40%;
+	left: 0%;
+ 	z-index: 2;
+}
+.right{
+	width:30px;
+	height: 60px;
+	position:absolute;
+	top: 40%;
+	right: 0%;
+ 	z-index: 2;
+
+}
+
+a{
+	color:white;
+	text-decoration: none;
+}
+
+nav ul{
+	background-color:black;
+	padding:0px;
+	font-size:20px;
+	text-align: center;
+	border-bottom: solid;
+	border-color: silver;
+	border-width: .2em;
+
+}
+
+nav ul li{	
+	padding :10px;
+	display: inline-block;
+	
+}
+
+nav ul li:hover {
+	background-color: grey;
+	color: white;
+	font-size: 10px;
+}
+
+
+.bullet{
+	list-style: none;
+	line-height: 3em;
+	display: block;	
+	text-align: center;
+	text-transform: uppercase;
+}
+.sidenav{	
+	border-bottom: solid;
+	border-width: .01em;
+	border-color: silver;
+
+
+}
+
+body{
+	width:1200px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top: 30px;
+	background-color: black;
+}
+
+main{
+	width:950px;
+	padding: 10 0px;
+	float:left;
+	
+
+}
+
+.section1{
+	
+	padding: 20px;
+
+}
+.search{
+	border-style: solid;
+	border-color: silver;
+	border-width: 1px;
+	padding: 20px
+
+}
+.searchform{
+	display: inline-block;
+	padding: 10 10 0 0;
+}
+.searchbutton{
+	padding:15px;
+	width: 270px
+}
+.inputsearch{
+	text-transform: capitalize;
+	padding:10px;
+	font-size: 20px;
+	font-family: "Times New Roman";
+	background-color:#D3D3D3;
+	
+}
+#contain{
+	float: left;
+	
+}
+
+#property{
+	padding: 23px;
+	
+}
+.thumb{
+	position: relative;
+	top: 0px;
+	left: 0px;
+}
+.thumb img{
+	vertical-align: bottom;
+
+}
+
+.thumb span{
+	position: absolute;
+	visibility: hidden;
+}
+.thumb span img{
+	width: 350px;
+	height: 250px;
+
+}
+.thumb:hover{
+	z-index:1;
+	
+}
+.thumb:hover #property{
+	opacity: .3;
+}
+
+ .thumb:hover span{
+	visibility: visible;
+	top:-130px;
+	left: 130px;
+	z-index: 2;
+
+
+
+
+}	
+
+#text{
+	position: absolute;
+	width:50px;
+	top: 170px;
+	left:50px;
+	z-index: 2;
+	color: white;
+	font-weight: bold;
+	text-transform: uppercase;
+
+
+}
+
+
+.featured_container{
+	background-color: #E9E9E9;
+}
+.featured{
+	font-style: normal;
+	font-size: 30px;
+	font-family: "Times New Roman";
+	color: lightgrey;
+	
+}
+
+.section2{
+	background-color:black;
+	padding: 10px;
+	
+}
+.showmore{
+	color: black;
+	text-align: center;
+	text-transform: capitalize;
+	font-family: "Times New Roman";
+	font-size:20px;
+	background-color: silver;
+	width: 300px;
+	margin-left:32%;
+}
+
+article{
+	font-size:15px;
+	text-align:center;
+	font-family:cursive;
+	line-height:20px;
+	padding:10px;
+	color: silver;
+	border-top: solid;
+	border-width: 1px;
+	margin-top: 20px;
+	width:700px;
+	margin-right: auto;
+	margin-left: auto; 
+}
+
+
+aside{
+	background-color:black;
+	color: silver;
+	width:200px;
+	float:right;
+	padding:10px;
+	margin-top:30px;
+	line-height:10px;
+}
+footer{
+	float:bottom left;
+	clear: both;
+	background: black;
+	border-top: solid;
+	border-color: silver;
+	color: silver;
+	padding: 10px;
+}
+@media screen and (max-width: 1020px){
+	body{
+		width:100%;
+	}
+	main{
+		width: 70%;
+	}
+	aside{
+		width: 25%;
+	}
+	#container {
+		width: 100%;
+	}
+	footer{
+		width: 100%;
+	}
+}
+@media screen and (max-width: 820px){
+	main{
+		width: 100%;
+	}
+	aside{
+		width: 100%;
+		float:left;
+	}
+}
